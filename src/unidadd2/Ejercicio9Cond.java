@@ -49,10 +49,8 @@ public class Ejercicio9Cond {
            case 11:
                System.out.println("Noviembre tiene 30 dias");
                break;
-           case 12:
-               System.out.println("Diciembre tiene 31 dias");
-               break;
            default:
+               System.out.println("Diciembre tiene 31 dias");
               
        }
     }

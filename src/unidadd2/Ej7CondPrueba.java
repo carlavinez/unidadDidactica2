@@ -1,11 +1,13 @@
 package unidadd2;
+
 import java.util.Scanner;
 
-public class Ejercicio7Cond {
+public class Ej7CondPrueba {
 
     public static void main(String[] args) {
        int hora;
        int minutos;
+       String franjaHoraria;
        
        System.out.println("escribe una hora: ");
        Scanner in = new Scanner(System.in);
@@ -13,16 +15,12 @@ public class Ejercicio7Cond {
        
        System.out.println("escribe los minutos: ");
        minutos = in.nextInt();
+       System.out.println(franjaHoraria = (hora >= 12)? "PM" : "AM");
        
-       boolean pm = hora > 12;
-       if (hora > 12)
+       if(hora > 12)
            hora -= 12;
        
-        System.out.printf("%02d:%02d\n",hora,minutos);
-        if(pm)
-            System.out.println("PM");
-        else
-            System.out.println("AM");
+        System.out.printf("%02d:%02d %s\n",hora, minutos, franjaHoraria);
     }
 
 }
